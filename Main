@@ -54,3 +54,12 @@ model.fit(x_train, y_train, epochs=25, batch_size=32)  # validation_data = (vali
 
 predicted_prices = model.predict(x_test)
 predicted_prices = scaler.inverse_transform(predicted_prices)
+
+
+plt.plot(actual_prices, color='black', label=f'Actual {company} price')
+plt.plot(predicted_prices, color='green', label=f'Actual {company} price')
+plt.title()
+plt.xlabel
+plt.ylabel()
+plt.legend()
+plt.show
